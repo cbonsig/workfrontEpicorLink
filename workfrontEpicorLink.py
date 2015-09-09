@@ -28,6 +28,12 @@ this application waits for requests to arrive, then
 5. responds with HTML formatted tables to display data
 6. formats with bootstrap CSS, served by some.linux.server and stored at /var/www/css, .../js, .../fonts
 
+note:
+in Chrome, and possibly other browsers, the embedded HTML in the Workfront dashboard is considered an "unsafe script"
+and it prevented from loading. The workaround is to click the gray shielf icon at the right of the URL bar,
+and click the button to "allow unsafe scripts". A better solution would be to revise this to serve HTTPS and 
+configure a valid security certificate on the server.
+
 references:
 1. http://store.atappstore.com/index.php/executive-summary/
 2. http://pymssql.org/en/stable/_mssql_examples.html
